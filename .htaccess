@@ -1,0 +1,6 @@
+RewriteEngine on
+DirectoryIndex index.php
+RewriteBase /transit-monitor
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /transit-monitor/index.php [L]
